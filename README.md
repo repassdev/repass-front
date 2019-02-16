@@ -1,4 +1,4 @@
-# repass-web
+# repass-front
 
 ## Project setup
 ```
