@@ -8,8 +8,8 @@
         <v-layout row wrap>
           <v-flex xs12 sm4>
             <v-img
-              src="http://www.placepuppy.net/1600/1600"
-              lazy-src="http://www.placepuppy.net/100/100"
+              src="./placeholder.jpg"
+              lazy-src="./placeholder.jpg"
               class="grey lighten-2 px-auto"
               style="max-height:420px;"
             >

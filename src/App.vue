@@ -11,6 +11,11 @@
           <v-list-tile-title>Adicionar Evento</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
+      <v-list-tile v-if="loggedIn == true" flat to="/meus-ingressos">
+        <v-list-tile-content>
+          <v-list-tile-title>Meus Ingressos</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
       <v-list-tile v-if="loggedIn == true" flat to="/perfil">
         <v-list-tile-content>
           <v-list-tile-title>Perfil</v-list-tile-title>
@@ -49,6 +54,9 @@
         </v-btn>
         <v-btn v-if="loggedIn == true" flat to="/adicionar-evento">
           <span>Adicionar Evento</span>
+        </v-btn>
+        <v-btn v-if="loggedIn == true" flat to="/meus-ingressos">
+          <span>Meus Ingressos</span>
         </v-btn>
         <v-btn v-if="loggedIn == true" flat to="/perfil">
           <span>Perfil</span>

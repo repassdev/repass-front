@@ -83,8 +83,7 @@ export default {
   methods: {
     onSubmit: function() {
       EventService.postEvent({ name: this.name, place: this.place, image: this.image }, localStorage.getItem("jwt"))
-        .then(res => {
-          alert(res.data);
+        .then(()=> {
             if (this.$route.params.nextUrl != null) {
               this.$router.push(this.$route.params.nextUrl);
             } else {

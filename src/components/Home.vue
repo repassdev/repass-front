@@ -13,7 +13,7 @@ style="background: linear-gradient(65deg,#8cf3c1 0%,#c18cf3 100%);"
               <v-flex xs12 sm4 text-xs-center>
                 <v-img
                   :src="tickets[0].event.image"
-                  lazy-src="http://www.placepuppy.net/100/100"
+                  lazy-src="./placeholder.jpg"
                   class="grey lighten-2"
                   style="height:320px;"
                 >
@@ -50,7 +50,7 @@ style="background: linear-gradient(65deg,#8cf3c1 0%,#c18cf3 100%);"
           <v-layout row wrap align-center style="background-color:#f5f5f5;">
             <v-flex xs12 sm4 text-xs-center>
               <v-img
-                src="http://www.placepuppy.net/100/100"
+                src="./placeholder.jpg"
                 class="grey lighten-2"
                 style="height:320px;"
               >
@@ -111,7 +111,7 @@ style="background: linear-gradient(65deg,#8cf3c1 0%,#c18cf3 100%);"
                     <div style="overflow:hidden">
                       <v-img
                         :src="ticket.event.image"
-                        lazy-src="http://www.placepuppy.net/100/100"
+                        lazy-src="./placeholder.jpg"
                         class="grey lighten-2 clickableImage"
                         height="100%"
                       >
