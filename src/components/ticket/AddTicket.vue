@@ -133,13 +133,12 @@ export default {
       TicketService.postTicket(
         { name: this.name, date: moment(this.date, 'DD/MM/YYYY hh:mm'), price: this.price, description: this.description, event: this.event },
         localStorage.getItem("jwt"))
-        .then(res => {
-          alert(res.data);
-            if (this.$route.params.nextUrl != null) {
-              this.$router.push(this.$route.params.nextUrl);
-            } else {
-              this.$router.push('/');
-            }
+        .then(() => {
+          if (this.$route.params.nextUrl != null) {
+            this.$router.push(this.$route.params.nextUrl);
+          } else {
+            this.$router.push('/');
+          }
         })
         .catch(() => {
           this.errorD = true;

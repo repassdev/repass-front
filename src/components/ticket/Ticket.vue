@@ -10,7 +10,7 @@
             <template v-if="ticket">
               <v-img
                 :src="ticket.event.image"
-                lazy-src="http://www.placepuppy.net/100/100"
+                lazy-src="../placeholder.jpg"
                 class="grey lighten-2 px-auto"
                 style="max-height:420px;"
               >
@@ -25,7 +25,7 @@
             </template>
             <template v-else>
               <v-img
-                src="http://www.placepuppy.net/100/100"
+                src="../placeholder.jpg"
                 class="grey lighten-2 px-auto"
                 style="max-height:420px;"
               >

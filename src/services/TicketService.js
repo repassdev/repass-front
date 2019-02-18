@@ -6,8 +6,11 @@ export default {
   postTicket(data, token) {
     return axios.post(`${url}/`, data, { headers: { Authorization: 'Bearer ' + token } });
   },
-  deleteTicket(id) {
-    return axios.delete(`${url}/${id}`);
+  deleteTicket(id, token) {
+    return axios.delete(`${url}/${id}`, { headers: { Authorization: 'Bearer ' + token } });
+  },
+  getUserTickets(token) {
+    return axios.get(`${url}/user`, { headers: { Authorization: 'Bearer ' + token } });
   },
   getTickets() {
     return axios.get(`${url}/`);
